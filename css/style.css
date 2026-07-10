@@ -29,20 +29,20 @@
 }
 
 .primary_btn {
-    padding: 12px 24px;
-    border: 1px solid #1d4ed8;
-    background-color: var(--primary);
-    color: var(--white);
-    font-weight: 500;
-    font-size: 16px;
-    text-transform: capitalize;
-    border-radius: 8px;
-    transition: 0.5s;
+  padding: 12px 24px;
+  border: 1px solid #1d4ed8;
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  transition: 0.5s;
 }
 
 .primary_btn:hover {
-    background-color: transparent;
-    color: var(--primary);
+  background-color: transparent;
+  color: var(--primary);
 }
 
 /* ==========================
@@ -60,21 +60,74 @@ header {
 }
 
 .header_content .head_logo img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .header_content ul {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .header_content ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .header_content ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--bodyText);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--bodyText);
+}
+
+/* ==========================
+   Banner css
+========================== */
+.banner_main {
+  height: 80vh;
+  background-image: url(../assets/banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 5, 9, 0.95) 0%,
+    rgba(6, 8, 14, 0.8) 25%,
+    rgba(14, 18, 32, 0.5) 55%,
+    rgba(25, 32, 52, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+.banner_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  padding: 120px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.banner_title {
+  color: var(--white);
+  font-size: 64px;
+  text-align: center;
+}
+
+.banner_description {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  width: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: auto;
 }
