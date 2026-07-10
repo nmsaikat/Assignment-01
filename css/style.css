@@ -1,27 +1,80 @@
 /* ==========================
+   Google Font
+========================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ==========================
    Reset css
 ========================== */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 /* ==========================
    Common css
 ========================== */
 :root {
-    --primary: #1D4ED8;
-    --secondary: #0D1B2A;
-    --white: #FFFFFF;
-    --bodyText: #575757;
+  --primary: #1d4ed8;
+  --secondary: #0d1b2a;
+  --white: #ffffff;
+  --bodyText: #575757;
 }
 
-.container  {
-    max-width: 1280px;
-    margin: auto;
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.primary_btn {
+    padding: 12px 24px;
+    border: 1px solid #1d4ed8;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.primary_btn:hover {
+    background-color: transparent;
+    color: var(--primary);
 }
 
 /* ==========================
    Header css
 ========================== */
+header {
+  background-color: var(--white);
+  padding: 12px 0;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_content .head_logo img {
+    max-width: 100%;
+}
+
+.header_content ul {
+    display: flex;
+    gap: 24px;
+}
+
+.header_content ul li {
+    list-style: none;
+}
+
+.header_content ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bodyText);
+}
