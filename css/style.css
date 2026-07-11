@@ -136,54 +136,274 @@ header {
    Speakers Section CSS
 ========================== */
 .speaker_main {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .speaker_title {
-    color: #000102;
-    font-weight: 600;
-    font-size: 42px;
-    text-align: center;
-    margin-bottom: 30px;
+  color: #000102;
+  font-weight: 600;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .speaker_card_main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .card {
-    background-color: var(--white);
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
+  background-color: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
 }
 
 .card img {
-    width: 100%;
-    border-radius: 12px 12px 0px 0px;
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
 }
 
 .card_body {
-    padding: 16px;
-    display: grid;
-    gap: 8px;
+  padding: 16px;
+  display: grid;
+  gap: 8px;
 }
 
 .card_sub_title {
-    color: #2563EB;
-    font-weight: 400;
-    font-size: 14px;
+  color: #2563eb;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .card_title {
-    color: var(--secondary);
-    font-weight: 500;
-    font-size: 20px;
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .card_description {
-    color: var(--bodyText);
-    font-weight: 400;
-    font-size: 13px;
+  color: var(--bodyText);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* ==========================
+   Pricing Section CSS
+========================== */
+.pricing_main {
+  padding: 80px 0px;
+}
+
+.pricing_content .pricing_title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 12px;
+}
+
+.pricing_short_description {
+  text-align: center;
+  color: var(--bodyText);
+  margin-bottom: 50px;
+}
+
+.pricing_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* Pricing 01 */
+.card_01 {
+  background-color: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.card_01_name {
+  color: #888888;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.card_01_price {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 42px;
+  padding: 2px 0;
+}
+
+.card_01_duration {
+  color: #888888;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.Card_01_feature_list {
+  padding: 20px 0px 20px 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.Card_01_feature_list ul li {
+  list-style: disc;
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 14px;
+}
+
+.Card_01_feature_list ul li::marker {
+  color: #2563eb;
+}
+
+.card_01_button button {
+  padding: 12px 24px;
+  border: 1px solid #1d4ed8;
+  background-color: transparent;
+  color: #1d4ed8;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card_01_button button:hover {
+  background-color: #1d4ed8;
+  color: var(--white);
+}
+
+/* Pricing 02 */
+.card_02 {
+  background-color: var(--secondary);
+  border: 1px solid #0d1b2a;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.card_02_name {
+  color: #93c5fd;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.card_02_price {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 42px;
+  padding: 2px 0;
+}
+
+.card_02_duration {
+  color: #ffffff90;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.Card_02_feature_list {
+  padding: 20px 0px 20px 12px;
+  border-top: 1px solid #ffffff31;
+}
+
+.Card_02_feature_list ul li {
+  list-style: disc;
+  margin-bottom: 12px;
+  color: #ffffff90;
+  font-size: 14px;
+}
+
+.Card_02_feature_list ul li::marker {
+  color: #60a5fa;
+}
+
+.card_02_button button {
+  padding: 12px 24px;
+  border: 1px solid #1d4ed8;
+  background-color: #2563eb;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card_02_button button:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid #fff;
+}
+
+/* Pricing 3 */
+.card_03 {
+  background-color: #F8F9FB;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.card_03_name {
+  color: #888888;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.card_03_price {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 42px;
+  padding: 2px 0;
+}
+
+.card_03_duration {
+  color: #888888;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.Card_03_feature_list {
+  padding: 20px 0px 20px 12px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.Card_03_feature_list ul li {
+  list-style: disc;
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 14px;
+}
+
+.Card_03_feature_list ul li::marker {
+  color: #60a5fa;
+}
+
+.card_03_button button {
+  padding: 12px 24px;
+  border: 1px solid #1d4ed8;
+  background-color: transparent;
+  color: #1d4ed8;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card_03_button button:hover {
+  background-color: #1d4ed8;
+  color: var(--white);
 }
