@@ -346,8 +346,8 @@ header {
 
 /* Pricing 3 */
 .card_03 {
-  background-color: #F8F9FB;
-  border: 1px solid #E5E7EB;
+  background-color: #f8f9fb;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 32px;
 }
@@ -376,7 +376,7 @@ header {
 
 .Card_03_feature_list {
   padding: 20px 0px 20px 12px;
-  border-top: 1px solid #E5E7EB;
+  border-top: 1px solid #e5e7eb;
 }
 
 .Card_03_feature_list ul li {
@@ -406,4 +406,138 @@ header {
 .card_03_button button:hover {
   background-color: #1d4ed8;
   color: var(--white);
+}
+
+
+/* ==========================
+   AI CHALLENGE SECTION CSS
+========================== */
+
+.newsletter {
+    background: #F8FAFC;
+    padding: 100px 20px;
+}
+
+.newsletter .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.newsletter-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter .tag {
+  display: inline-block;
+  background: #eef4ff;
+  color: #2563eb;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.newsletter h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+/* Form */
+
+.newsletter-form {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  max-width: 420px;
+  height: 56px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 0 18px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.newsletter-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.newsletter-form button {
+  height: 56px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.newsletter small {
+  display: block;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* ==========================
+   AI CHALLENGE SECTION Responsive
+========================== */
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 70px 20px;
+  }
+
+  .newsletter-content {
+    padding: 40px 25px;
+  }
+
+  .newsletter h2 {
+    font-size: 30px;
+  }
+
+  .newsletter p {
+    font-size: 16px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    max-width: 100%;
+  }
 }
