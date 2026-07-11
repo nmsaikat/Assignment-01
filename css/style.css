@@ -408,14 +408,13 @@ header {
   color: var(--white);
 }
 
-
 /* ==========================
    AI CHALLENGE SECTION CSS
 ========================== */
 
 .newsletter {
-    background: #F8FAFC;
-    padding: 100px 20px;
+  background: #f8fafc;
+  padding: 100px 20px;
 }
 
 .newsletter .container {
@@ -541,3 +540,57 @@ header {
     max-width: 100%;
   }
 }
+
+/*=========================
+    Footer Css
+=========================*/
+footer {
+  background: #0d1b2a;
+  padding: 40px 0px 20px 0px;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.social_links {
+  display: flex;
+  gap: 15px;
+}
+
+.social_links a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.35s;
+}
+
+.social_links a:hover {
+  background: #2563eb;
+  transform: translateY(-5px);
+}
+
+footer hr{
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.12);
+    margin-bottom:30px;
+}
+
+.copyright{
+    text-align:center;
+    color:#94A3B8;
+    font-size:15px;
+    line-height:1.8;
+}
+
